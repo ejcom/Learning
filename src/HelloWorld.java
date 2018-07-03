@@ -8,8 +8,14 @@ public class HelloWorld {
         System.out.println(a+b);
         if (a>b)
             System.out.println("A>B");
-        else
+        else {
             System.out.println("A<B");
-        System.err.println();
+        }
+
+        if (a==1)
+        {
+            CaseLearn cln = new CaseLearn();
+            cln.CaseMain();
+        }
     }
 }
