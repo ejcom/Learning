@@ -1,4 +1,4 @@
-package lections;
+package lections.onethousand;
 
 import java.util.Arrays;
 
