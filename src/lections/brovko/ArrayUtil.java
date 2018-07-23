@@ -1,11 +1,9 @@
 package lections.brovko;
 
-import java.util.Arrays;
-
 public class ArrayUtil {
 
-    int findIndex (int array[], int element) {
-        for(int i=0; i < array.length; i++) {
+    int findIndex(int array[], int element) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == element) {
                 return i;
             }
@@ -14,7 +12,7 @@ public class ArrayUtil {
     }
 
     int findElement(int array[], int element) {
-        for(int i=0; i<array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == element) {
                 return array[i];
             }
@@ -23,7 +21,7 @@ public class ArrayUtil {
     }
 
     boolean hasElement(int array[], int element) {
-        for(int i = 0; i< array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == element) {
                 return true;
             }
@@ -34,8 +32,8 @@ public class ArrayUtil {
     int maxElement(int array[]) {
         assert (array.length > 0);
         int currentMax = array[0];
-        for(int i = 0; i<array.length; i++) {
-            if(array[i]>currentMax) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > currentMax) {
                 currentMax = array[i];
             }
         }
@@ -43,9 +41,9 @@ public class ArrayUtil {
     }
 
     int minElement(int array[]) {
-        assert(array.length>0);
+        assert (array.length > 0);
         int currentMin = array[0];
-        for (int i = 0; i<array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] < currentMin) {
                 currentMin = array[i];
             }
@@ -54,19 +52,20 @@ public class ArrayUtil {
     }
 
     int findBinary(int array[], int element) {
-        if(array != null) {
+        if (array != null) {
             int low = 0, high = array.length, mid;
             while (low < high) {
-                mid = (low + high)>>>1;
-                if (element==array[mid]) {
+                mid = (low + high) >>> 1;
+                if (element == array[mid]) {
                     return mid;
                 } else {
                     if (element < array[mid]) {
                         high = mid;
                     } else {
-                        low = mid+1;
+                        low = mid + 1;
                     }
                 }
+            }
         }
         return -1;
     }

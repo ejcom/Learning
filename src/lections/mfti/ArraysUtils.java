@@ -1,7 +1,5 @@
 package lections.mfti;
 
-import java.util.Arrays;
-
 public class ArraysUtils {
     public static void stackAdd(int[] array, int element, int pozition) {
 
@@ -18,7 +16,5 @@ public class ArraysUtils {
         for k in range(4, -1, -1):
             print(A[k])
          */
-
-        }
     }
 }
