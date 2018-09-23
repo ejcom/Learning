@@ -12,6 +12,9 @@ public class BinGenerator {
 //        for(int i=0; i<notation; i++) {
 //
 //        }
+        Object o = new Object();
+        o.
+
     }
 
 }
